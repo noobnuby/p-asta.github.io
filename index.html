@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fullpage.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fullpage.min.css">
+</head>
+<body>
+    <div id="fullpage" style="font-size: 100px;">
+        <div class="section">a</div>
+    </div>
+</body> 
+</html>
+
+<script>
+    new fullpage("#fullpage", {
+        autoScrolling: true,
+        scrollHorizontally: true,
+        scrollingSpeed: 500,
+        // sectionsColor: ['#fff', '#f0ffff', '#fffff0'],
+        loopHorizontal: true,
+        // onLeave: (before, after) => {
+        //     if (after.index == 1) {
+                
+        //     }
+        // }
+    });
+</script>
