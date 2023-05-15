@@ -15,9 +15,14 @@
             <div id="hello"></div>
         </div>
         <div class="section">
-            <section>
-                <a id="github" target="_blank" href="https://github.com/5-23">
+            <section id="sns">
+                <a id="github" target="_blank" href="https://github.com/5-23" style="--c: #24292f">
                     <img src="img/github.svg"> <b>github</b>
+                </a>
+
+                
+                <a id="discord" target="_blank" href="https://discord.com" style="--c: #5865f2">
+                    <img src="img/discord.svg"> <b>discord</b>
                 </a>
             </section>
         </div>
@@ -41,10 +46,20 @@
         scrollingSpeed: 500,
         // sectionsColor: ['#fff', '#f0ffff', '#fffff0'],
         loopHorizontal: true,
-        // onLeave: (before, after) => {
-        //     if (after.index == 1) {
-                
-        //     }
-        // }
+        onLeave: (before, after) => {
+            document.querySelectorAll("#sns > a").forEach((e) => {
+                console.log(e)
+                e.style.opacity = "0"
+            })
+
+            if (after.index == 1) {
+                i = 1
+                document.querySelectorAll("#sns > a").forEach((e) => {
+                    setTimeout(() => {
+                        e.style.opacity = "1"
+                    }, 1000*i++)
+                })
+            }
+        }
     });
 </script>
