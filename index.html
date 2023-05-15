@@ -14,17 +14,39 @@
         <div class="section" style="font-size: 30px;font-weight: 900;">
             <div id="hello"></div>
         </div>
+        
         <div class="section">
-            <section id="sns">
+            <h1>좋아하는 언어</h1>
+            <article id="fav-lang">
+                <section>
+                    <img src="img/js.png" alt="Rust">
+                    <div style="--c: #f0dc4e">3</div>
+                </section>
+                <section id="one">
+                    <img src="img/rust.png" alt="Rust">
+                    <div style="--c: #f74c00">1</div>
+                </section>
+                <section>
+                    <img src="img/python.png" alt="Rust">
+                    <div style="--c: #3474a4">2</div>
+                </section>
+            </article>
+        </div>
+        
+        <div class="section">
+            <article id="sns">
                 <a id="github" target="_blank" href="https://github.com/5-23" style="--c: #24292f">
                     <img src="img/github.svg"> <b>github</b>
                 </a>
 
-                
-                <a id="discord" target="_blank" href="https://discord.com" style="--c: #5865f2">
+                <a id="discord" target="_blank" href="https://discord.gg/objective-850364325834391582" style="--c: #5865f2">
                     <img src="img/discord.svg"> <b>discord</b>
                 </a>
-            </section>
+
+                <a id="instagram" target="_blank" href="https://www.instagram.com/5_23dev/" style="--c: #ec4a66">
+                    <img src="img/instagram.svg"> <b>instagram</b>
+                </a>
+            </article>
         </div>
     </div>
 </body> 
@@ -52,12 +74,12 @@
                 e.style.opacity = "0"
             })
 
-            if (after.index == 1) {
+            if (after.index == 2) {
                 i = 1
                 document.querySelectorAll("#sns > a").forEach((e) => {
                     setTimeout(() => {
                         e.style.opacity = "1"
-                    }, 1000*i++)
+                    }, 500*(i+=0.5))
                 })
             }
         }
