@@ -9,14 +9,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fullpage.min.css">
 </head>
-<body>
-    <div id="fullpage" style="font-size: 100px;">
-        <div class="section">a</div>
+<body align="center">
+    <div id="fullpage">
+        <div class="section" style="font-size: 30px;font-weight: 900;">
+            <div id="hello"></div>
+        </div>
+        <div class="section">
+            <section>
+                <a id="github" target="_blank" href="https://github.com/5-23">
+                    <img src="img/github.svg"> <b>github</b>
+                </a>
+            </section>
+        </div>
     </div>
 </body> 
 </html>
 
+
+
+
 <script>
+    a = "👋 학생개발자 5-23입니다."
+    for (let i = 0; i< a.length; i++){
+        setTimeout(() => {
+            document.getElementById("hello").innerHTML += a[i]
+        }, 150*i)
+    }
     new fullpage("#fullpage", {
         autoScrolling: true,
         scrollHorizontally: true,
