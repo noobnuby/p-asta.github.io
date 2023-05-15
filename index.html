@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="fullpage.min.css">
 </head>
 <body align="center">
+    
     <div id="fullpage">
-        <div class="section" style="font-size: 30px;font-weight: 900;">
-            <div id="hello"></div>
+        <div class="section">
+            <div id="hello" style="font-size: 30px;font-weight: 900;"></div>
+            <img id="arrow" src="img/arrow.svg"/>
         </div>
         
         <div class="section">
@@ -20,7 +22,7 @@
             <article id="fav-lang">
                 <section>
                     <img src="img/js.png" alt="Rust">
-                    <div style="--c: #f0dc4e">3</div>
+                    <div style="--c: #2e302c">3</div>
                 </section>
                 <section id="one">
                     <img src="img/rust.png" alt="Rust">
@@ -33,6 +35,19 @@
             </article>
         </div>
         
+        <div class="section">
+            <h1>하고있는거</h1>
+            <article id="doing">
+
+                <section>웹개발 외주</section>
+                <section>피그마 연습</section>
+                <section>대회준비</section>
+                <section>테트리스</section>
+            </article>
+
+        </div>
+
+
         <div class="section">
             <article id="sns">
                 <a id="github" target="_blank" href="https://github.com/5-23" style="--c: #24292f">
@@ -62,6 +77,9 @@
             document.getElementById("hello").innerHTML += a[i]
         }, 150*i)
     }
+    setTimeout(() => {
+            document.getElementById("arrow").style.opacity = "1"
+        }, 3000)
     new fullpage("#fullpage", {
         autoScrolling: true,
         scrollHorizontally: true,
@@ -70,12 +88,28 @@
         loopHorizontal: true,
         onLeave: (before, after) => {
             document.querySelectorAll("#sns > a").forEach((e) => {
-                console.log(e)
                 e.style.opacity = "0"
             })
+            document.querySelectorAll("#doing > section").forEach((e) => {
+                e.style.opacity = "0"
+                e.style.transform = "translateY(-10px)"
+            })
+
+
 
             if (after.index == 2) {
-                i = 1
+                i = 0.5
+                document.querySelectorAll("#doing > section").forEach((e) => {
+                    setTimeout(() => {
+                        console.log(e)
+                        e.style.opacity = "1"
+                        e.style.transform = "translateY(0)"
+                    }, 500*(i+=0.5))
+                })
+            }
+
+            if (after.index == 3) {
+                i = 0.5
                 document.querySelectorAll("#sns > a").forEach((e) => {
                     setTimeout(() => {
                         e.style.opacity = "1"

@@ -1,12 +1,29 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 *{
     font-family: 'pretendard';
+    /* --bg: #161616; 
+    --rev: #fff;
+    --bright: 1.2; */
+    
+    
+    --bg: #f4f4f4;
+    --rev: #000;
+    
+    --bright: 0.8
+   
+
+
+    color: var(--rev);
+}
+
+body{
+    background-color: var(--bg);
 }
 
 #hello::after{
     content: '';
     padding-left: 1px;
-    background-color: #000;
+    background-color: var(--rev);
     animation-name: flash;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -69,14 +86,14 @@ a:hover{
     gap: 30px;
 }
 #fav-lang > section > div{
-    filter:brightness(0.8);
+    filter:brightness(var(--bright));
     height: 40px;
     width: 100px;
-    border-top: var(--c) solid 1px;
-    border-left: var(--c) solid 1px;
-    border-right: var(--c) solid 1px;
+    border-top: var(--c) solid 3px;
+    border-left: var(--c) solid 3px;
+    border-right: var(--c) solid 3px;
     color: var(--c);
-    font-weight: 900;
+    font-weight: 500;
     font-size: 40px;
     vertical-align: bottom;
 }
@@ -142,3 +159,49 @@ a:hover{
         width: 60px;
     }
 }
+
+#arrow{
+    position: absolute;
+    bottom: 0;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    font-size: 15px;
+    padding: 5px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+@keyframes arrow {
+    0%, 100%{
+        animation-timing-function: cubic-bezier(0.08, 0.82, 0.39, 1.24);
+        transform: rotate(90deg) translateX(-60px) translateY(15px);
+    }
+    50%{
+        animation-timing-function: cubic-bezier(0.52, 0.07, 0.66, 1.09);
+        transform: rotate(90deg) translateX(-30px) translateY(15px);
+    }
+}
+
+
+#doing{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#doing > section{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #ddd;
+    transition: all 1s;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+#doing > section:nth-child(1){ background-color: #cfffd6 }
+#doing > section:nth-child(2){ background-color: #fbffc7 }
+#doing > section:nth-child(3){ background-color: #daeaff }
+#doing > section:nth-child(4){ background-color: #ffcef9 }
