@@ -2,120 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="fullpage.min.js"></script>
+    <title>im 5-23</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fullpage.min.css">
 </head>
-<body align="center">
-    
-    <div id="fullpage">
-        <div class="section">
-            <div id="hello" style="font-size: 30px;font-weight: 900;"></div>
-            <img id="arrow" src="img/arrow.svg"/>
-        </div>
-        
-        <div class="section">
-            <h1>좋아하는 언어</h1>
-            <article id="fav-lang">
-                <section>
-                    <img src="img/js.png" alt="Rust">
-                    <div style="--c: #2e302c">3</div>
-                </section>
-                <section id="one">
-                    <img src="img/rust.png" alt="Rust">
-                    <div style="--c: #f74c00">1</div>
-                </section>
-                <section>
-                    <img src="img/python.png" alt="Rust">
-                    <div style="--c: #3474a4">2</div>
-                </section>
-            </article>
-        </div>
-        
-        <div class="section">
-            <h1>하고있는거</h1>
-            <article id="doing">
+<body>
+    <header>
+        <img src="img/5-23.svg" alt="5-23">
+    </header>
+    <div style="margin-bottom: 60px;"></div>
+    <main>
+        <article>
+            <section id="intro">
+                <div>:P</div>
+                <h1>hello, world</h1>
+            </section>
+            
+            <section id="info">
+                <div>
+                    <div id="title">
+                        <img src="img/three.svg" alt="3">
+                        <h1>who am i</h1>
+                    </div>
+                    <div id="info">
+                        <div> <h2>im</h2> rustacean </div>
+                        <div> <h2>im</h2> full statc devloper </div>
+                        <div> <h2>im</h2> arch linux user  </div>
+                    </div>
+                </div>
 
-                <section>웹개발 외주</section>
-                <section>피그마 연습</section>
-                <section>대회준비</section>
-                <section>테트리스</section>
-            </article>
+                
+                <div>
+                    <div id="title">
+                        <img src="img/record.svg" alt="[R]">
+                        <h1>record</h1>
+                    </div>
+                    <div id="info">
+                        <div> <h2>11.01.2022</h2> start rust-lang </div>
+                        <div> <h2>01.11.2023</h2> start full stack </div>
+                        <div> <h2>08.17.2023</h2> discord bot joins 3000 servers </div>
+                    </div>
+                </div>
+            </section>
+        </article>
 
-        </div>
+        <article>
+            <section id="projects">
+                
+                <div id="title">
+                    <img src="img/projects.svg" alt="3">
+                    <h1>projects</h1>
 
+                </div>
+                <div>
+                    <a href="https://github.com/5-23/5-23.github.io" target="_blank">
+                        <div>
+                            /5-23/5-23.github.io
+                        </div>
+                        <div>
+                            <h2>my page</h2>
+                            The Russian Roulette project
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/5-23/limbo" target="_blank">
+                        <div>
+                            /5-23/limbo
+                        </div>
+                        <div>
+                            <h2>limbo</h2>
+                            The Russian Roulette project
+                        </div>
+                    </a>
 
-        <div class="section">
-            <article id="sns">
-                <a id="github" target="_blank" href="https://github.com/5-23" style="--c: #24292f">
-                    <img src="img/github.svg"> <b>github</b>
-                </a>
+                    
+                    <a href="https://github.com/5-23/rust-tetris" target="_blank">
+                        <div>
+                            /5-23/rust-tetris
+                        </div>
+                        <div>
+                            <h2>tetris</h2>
+                            Tetris make with rust
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/5-23/rust-tetris" target="_blank">
+                        <div>
+                            /5-23/rust-snake
+                        </div>
+                        <div>
+                            <h2>snake game</h2>
+                            snake make with rust
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/phant80m/seraphite" target="_blank">
+                        <div>
+                            /phant80m/seraphite
+                        </div>
+                        <div>
+                            <h2>seraphite</h2>
+                            Dotfile / config manager
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/phant80m/dotfiles" target="_blank">
+                        <div>
+                            /phant80m/dotfiles
+                        </div>
+                        <div>
+                            <h2>dotfiles</h2>
+                            beautiful hyprland theme
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
 
-                <a id="discord" target="_blank" href="https://discord.gg/objective-850364325834391582" style="--c: #5865f2">
-                    <img src="img/discord.svg"> <b>discord</b>
-                </a>
+    <div style="margin-bottom: 300px;"></div>
 
-                <a id="instagram" target="_blank" href="https://www.instagram.com/5_23dev/" style="--c: #ec4a66">
-                    <img src="img/instagram.svg"> <b>instagram</b>
-                </a>
-            </article>
-        </div>
-    </div>
-</body> 
+</body>
 </html>
 
-
-
-
 <script>
-    a = "👋 학생개발자 5-23입니다."
-    for (let i = 0; i< a.length; i++){
-        setTimeout(() => {
-            document.getElementById("hello").innerHTML += a[i]
-        }, 150*i)
+    let emoticon = document.querySelector("#intro > div");
+    emoticon_txt = [":D", ":P", ":O", ":I", ":V"]
+    let i = 0
+    const emoticon_changer = () => {
+        emoticon.innerHTML = emoticon_txt[i++%emoticon_txt.length]
+        setTimeout(emoticon_changer, 1000)
+        // requestAnimationFrame(emoticon_changer)
     }
-    setTimeout(() => {
-            document.getElementById("arrow").style.opacity = "1"
-        }, 3000)
-    new fullpage("#fullpage", {
-        autoScrolling: true,
-        scrollHorizontally: true,
-        scrollingSpeed: 500,
-        // sectionsColor: ['#fff', '#f0ffff', '#fffff0'],
-        loopHorizontal: true,
-        onLeave: (before, after) => {
-            document.querySelectorAll("#sns > a").forEach((e) => {
-                e.style.opacity = "0"
-            })
-            document.querySelectorAll("#doing > section").forEach((e) => {
-                e.style.opacity = "0"
-                e.style.transform = "translateY(-10px)"
-            })
-
-
-
-            if (after.index == 2) {
-                i = 0.5
-                document.querySelectorAll("#doing > section").forEach((e) => {
-                    setTimeout(() => {
-                        console.log(e)
-                        e.style.opacity = "1"
-                        e.style.transform = "translateY(0)"
-                    }, 500*(i+=0.5))
-                })
-            }
-
-            if (after.index == 3) {
-                i = 0.5
-                document.querySelectorAll("#sns > a").forEach((e) => {
-                    setTimeout(() => {
-                        e.style.opacity = "1"
-                    }, 500*(i+=0.5))
-                })
-            }
-        }
-    });
+    emoticon_changer()
+    emoticon.innerHTML = ":D"
 </script>
