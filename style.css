@@ -14,9 +14,10 @@
 }
 :root {
     --blue: #6457FE;
+    --light-blue:#a198ff;
     --gradient: linear-gradient(45deg, #4E3EDD, #6457FE);
     --bg: #090C2A;
-    --overlay1: #221F4A;
+    --overlay1: #221f4a81;
     --overlay2: #1C1A3F;
 }
 
@@ -31,6 +32,7 @@ header {
     width: 100vw;
     height: 60px;
     background-color: var(--overlay1);
+    backdrop-filter: blur(50px);
     display: flex;
     align-items: center;
     padding: 0 10vw;
@@ -113,32 +115,62 @@ section#projects {
     > div {
         display: flex;
         flex-wrap: wrap;
+        flex-grow: 1;
         align-items: center;
         gap: 20px;
         > a {
+            flex-grow: 1;
             border-radius: 12px;
             overflow: hidden;
             --w: 300px;
             --h: 140px;
             width: var(--w);
             height: var(--h);
+            max-width: 350px;
             &:hover {
                 > div:first-child {
-                border-radius: 12px;
                     height: var(--h);
+                    
+                    > p {
+                        color: var(--light-blue)
+                    }
                 }
             }
             > div {
-                border-radius: 12px 12px 0 0;
                 transition: all .5s;
-                padding: 54px 20px 20px 20px;
+                padding: 20px;
                 &:first-child {
-                    position: absolute;
-                    width: var(--w);
+                    overflow: hidden;
+                    flex-grow: 1;
+                    width: 350px;
                     height: 34px;
                     font-size: 14px;
                     padding: 10px 20px;
-                    background: url("img/github.svg") no-repeat 50% calc(110px/2), var(--gradient);
+                    background: no-repeat 50% calc(110px/2), var(--gradient);
+                    > div, > p {
+                        transition: all .5s;
+                        margin-right: 28px;
+                    }
+                    > div {
+                        margin-top: 10px;
+                        > h2 {
+                            color: #fff
+                        }
+                        > hr {
+                            border: solid 1px var(--blue);
+                            margin-bottom: 8px; 
+                        }
+                        > div {
+                            display: flex;
+                            gap: 10px;
+                            align-items: start;
+                            justify-content: start;
+                            flex-wrap: wrap;
+                            > p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
                 }
             }
             background-color: var(--overlay2);
