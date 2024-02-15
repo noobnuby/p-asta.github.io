@@ -72,7 +72,7 @@
 
                 </div>
                 <div>
-                    <a href="https://github.com/5-23/5-23.github.io" target="_blank">
+                    <div class="project" href="https://github.com/5-23/5-23.github.io" target="_blank">
                         <div>
                             <p> /5-23/5-23.github.io </p>
                             <div>
@@ -88,9 +88,9 @@
                             <h2>my page</h2>
                             The Russian Roulette project
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="https://github.com/5-23/limbo" target="_blank">
+                    <div class="project" href="https://github.com/5-23/limbo" target="_blank">
                         <div>
                             <p> /5-23/limbo </p>
                             
@@ -107,10 +107,10 @@
                             <h2>limbo</h2>
                             The Russian Roulette project
                         </div>
-                    </a>
+                    </div>
 
                     
-                    <a href="https://github.com/5-23/rust-tetris" target="_blank">
+                    <div class="project" href="https://github.com/5-23/rust-tetris" target="_blank">
                         <div>
                             <p> /5-23/rust-tetris </p>
                             
@@ -126,9 +126,9 @@
                             <h2>tetris</h2>
                             Tetris make with rust
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="https://github.com/5-23/rust-tetris" target="_blank">
+                    <div class="project" href="https://github.com/5-23/rust-tetris" target="_blank">
                         <div>
                             <p> /5-23/rust-snake </p>
                             
@@ -144,9 +144,9 @@
                             <h2>snake game</h2>
                             snake make with rust
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="https://github.com/phant80m/seraphite" target="_blank">
+                    <div class="project" href="https://github.com/phant80m/seraphite" target="_blank">
                         <div>
                             <p>/phant80m/seraphite</p>
                             
@@ -162,9 +162,9 @@
                             <h2>seraphite</h2>
                             Dotfile / config manager
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="https://github.com/phant80m/dotfiles" target="_blank">
+                    <div class="project" href="https://github.com/phant80m/dotfiles" target="_blank">
                         <div>
                             <p> /phant80m/dotfiles </p>
                             
@@ -184,7 +184,7 @@
                             <h2>dotfiles</h2>
                             beautiful hyprland theme
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
         </article>
@@ -206,4 +206,9 @@
     }
     emoticon_changer()
     emoticon.innerHTML = ":D"
+    document.querySelectorAll(".project").forEach(e => {
+        e.addEventListener("click", a => { 
+            window.open(e.getAttribute("href"))
+        })
+    })
 </script>

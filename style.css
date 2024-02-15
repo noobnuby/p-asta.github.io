@@ -118,7 +118,7 @@ section#projects {
         flex-grow: 1;
         align-items: center;
         gap: 20px;
-        > a {
+        > .project {
             flex-grow: 1;
             border-radius: 12px;
             overflow: hidden;
