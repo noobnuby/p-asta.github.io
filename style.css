@@ -119,6 +119,7 @@ section#projects {
         align-items: center;
         gap: 20px;
         > .project {
+            cursor: pointer;
             flex-grow: 1;
             border-radius: 12px;
             overflow: hidden;
