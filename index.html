@@ -24,6 +24,16 @@
 
 </head>
 <body>
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                                                            <!--? ? ? 강도  퍼지는 정도-->
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
     <header>
         <img src="img/Asta.svg" alt="Asta">
         <a href="https://toss.5-23.dev" target="_blank">
@@ -34,7 +44,10 @@
     <main>
         <article>
             <section id="intro">
-                <div>:P</div>
+                <div>
+                    <div id="face" class="blend">:P</div>
+                    <div id="box" class="blend"></div>
+                </div>
                 <h1>hello, world</h1>
             </section>
             
@@ -43,6 +56,7 @@
                     <div id="title">
                         <img src="img/three.svg" alt="3">
                         <h1>who am i</h1>
+                        <div class="line"></div>
                     </div>
                     <div id="info">
                         <div> <h2>im</h2> rustacean </div>
@@ -56,6 +70,7 @@
                     <div id="title">
                         <img src="img/record.svg" alt="[R]">
                         <h1>record</h1>
+                        <div class="line"></div>
                     </div>
                     <div id="info">
                         <div> <h2>11.01.2024</h2> patinex 2024 전시 </div>
@@ -75,7 +90,7 @@
                 <div id="title">
                     <img src="img/projects.svg" alt="3">
                     <h1>projects</h1>
-
+                    <div class="line"></div>
                 </div>
                 <div>
                     
@@ -304,7 +319,7 @@
 </html>
 
 <script>
-    let emoticon = document.querySelector("#intro > div");
+    let emoticon = document.querySelector("#face");
     emoticon_txt = [":D", ":P", ":O", ":I", ":V"]
     let i = 0
     const emoticon_changer = () => {
