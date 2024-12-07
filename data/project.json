@@ -1,5 +1,12 @@
 [
   {
+    "github": "P-Asta/FixedItemRotation",
+    "image": "./img/projects/starix.jpg",
+    "stack": ["c-sharp", "unity"],
+    "short_description": "리썰 컴퍼니의 함선에서 아이템을 정리하기 쉽게 만들어주는 모드입니다",
+    "long_description": "준비중"
+  },
+  {
     "github": "/P-Asta/starix",
     "image": "./img/projects/starix.jpg",
     "stack": ["rust", "github workflow"],
