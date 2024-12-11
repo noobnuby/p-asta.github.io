@@ -4,7 +4,7 @@
     "image": "./img/projects/starix.jpg",
     "stack": ["c-sharp", "unity"],
     "short_description": "리썰 컴퍼니의 함선에서 아이템을 정리하기 쉽게 만들어주는 모드입니다",
-    "long_description": "준비중"
+    "long_description": "리썰 컴퍼니라는 게임을 하다가 함선에 아이템을 정리할때 각도가 고정적으로 놔둬지지 않아, 아이템을 정리하기 힘들어서 만들게 되었습니다. 이 모드는 아이템을 놓을때 각도를 고정적으로 놔둬주는 모드입니다."
   },
   {
     "github": "/P-Asta/starix",
