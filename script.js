@@ -11,7 +11,7 @@ emoticon_changer();
 emoticon.innerHTML = ":D";
 
 // my projects
-fetch("data.json")
+fetch("data/project.json")
   .then((response) => response.json())
   .then((data) => {
     const container = document.getElementById("projects-container");
