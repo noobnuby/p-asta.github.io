@@ -1,5 +1,12 @@
 [
   {
+    "github": "P-Asta/TurretKiller",
+    "image": "./img/projects/starix.jpg",
+    "stack": ["c-sharp", "unity"],
+    "short_description": "리썰 컴퍼니의 터렛을 무기를 사용하여 무력화 시키는 모드입니다",
+    "long_description": "리썰 컴퍼니라는 게임을 하다가 터렛이 너무 많은 맵이 나오는것이 너무 짜증나서 만들게 되었습니다. 생각보다 외국에서 인기가 있어서 계속 업데이트를 할 생각입니다"
+  },
+  {
     "github": "P-Asta/FixedItemRotation",
     "image": "./img/projects/starix.jpg",
     "stack": ["c-sharp", "unity"],
