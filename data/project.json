@@ -1,6 +1,6 @@
 [
   {
-    "github": "P-Asta/TurretKiller",
+    "github": "/P-Asta/TurretKiller",
     "image": "https://github.com/P-Asta/TurretKiller/raw/refs/heads/main/assets/test.gif",
     "site": "https://thunderstore.io/c/lethal-company/p/asta/TurretKiller/",
     "stack": ["c-sharp", "unity"],
@@ -8,7 +8,7 @@
     "long_description": "리썰 컴퍼니라는 게임을 하다가 터렛이 너무 많은 맵이 나오는것이 너무 짜증나서 만들게 되었습니다. 생각보다 외국에서 인기가 있어서 계속 업데이트를 할 생각입니다"
   },
   {
-    "github": "P-Asta/FixedItemRotation",
+    "github": "/P-Asta/FixedItemRotation",
     "image": "./img/projects/starix.jpg",
     "stack": ["c-sharp", "unity"],
     "short_description": "리썰 컴퍼니의 함선에서 아이템을 정리하기 쉽게 만들어주는 모드입니다",
